@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue in Django</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">{{ message }}</div>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return { message: 'Hello from Vue!' };
+        }
+      });
+      app.mount('#app');
+    </script>
+  </body>
+</html>
